@@ -18,10 +18,10 @@ export default function EpisodesList() {
   }, [])
 
   return <section className='episode-list grid-view'>
-    <h2>
+    <div className='flexDiv'>
       {episodes.map(item => (
         <EpisodeCard key={item.id} component={item} />
       ))}
-    </h2>
+    </div>
   </section>
 }

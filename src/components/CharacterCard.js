@@ -17,7 +17,7 @@ export default function CharacterCard ({ name, status, origin, image, species, l
   return (
     <CardDiv>
       <CardImg src={image} />
-      <div>{name}</div>
+      <h1>{name}</h1>
       <div>{species} {status}</div>
       <div>Location: {location}</div>
       <div>Origin: {origin}</div>
