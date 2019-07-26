@@ -1,5 +1,27 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
 
-export default function CharacterCard ({ /* add props */ }) {
-  return (<span>todo: location</span>
+const CardDiv = styled.div`
+  border: 1px solid gray;
+  margin: 25px;
+  font-size: 1rem;
+  text-align: center;
+  padding: 25px;
+`;
+
+const CardImg = styled.img`
+  width: 75%;
+`;
+
+export default function CharacterCard ({ name, status, origin, image, species, location, episodes }) {
+  return (
+    <CardDiv>
+      <CardImg src={image} />
+      <h1>{name}</h1>
+      <div>{species} {status}</div>
+      <div>Location: {location}</div>
+      <div>Origin: {origin}</div>
+      <button>episodes</button>
+    </CardDiv>
+  )
 }
