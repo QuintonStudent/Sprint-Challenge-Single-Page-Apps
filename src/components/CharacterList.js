@@ -20,12 +20,11 @@ export default function CharacterList() {
   }, [])
 
   return <section className='character-list grid-view'>
-
-      <h2>
-        {characters.map(item => (
-          <CharacterCard key={item.id} name={item.name} species={item.species} status={item.status} origin={item.origin.name} image={item.image} location={item.location.name} episodes={item.episodes} />
-        ))}
-      </h2>
-    </section>
+    <h2>
+      {characters.map(item => (
+        <CharacterCard key={item.id} name={item.name} species={item.species} status={item.status} origin={item.origin.name} image={item.image} location={item.location.name} episodes={item.episodes} />
+      ))}
+    </h2>
+  </section>
 
 }
